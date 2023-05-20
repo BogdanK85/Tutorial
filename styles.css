@@ -1,0 +1,290 @@
+/* .swiper {
+    width: 600px;
+    height: 300px;
+} */
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+@import url('./normalize.css');
+@import url('./fonts.css');
+@import url('./reset.css');
+@import url('./buttons.css');
+@import url('./preloader.css');
+@import url('./header.css');
+@import url('./section_hero.css');
+@import url('./section_about-us.css');
+@import url('./section_catalog.css');
+@import url('./section_new-watches.css');
+@import url('./section_sale.css');
+@import url('./footer.css');
+@import url('./popup.css');
+@import url('./modal.css');
+
+:root {
+    --white-color: #ffffff;
+    --white-transparent-color: rgba(255, 255, 255, 0.5);
+    --black-color: #141414;
+    --dark-green-color: #1e2827;
+    --dark-gray-color: rgba(20, 20, 20, 0.5);
+    --light-gray-color: rgba(20, 20, 20, 0.4);
+    --copy-color: #c6cdd1;
+    --red: red;
+    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-family: Epilogue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.285714;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+
+    color: var(--black-color);
+    background-color: var(--white-color);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+@font-face {
+    font-family: 'Epilogue';
+    src: url('../fonts/Epilogue-Regular.woff2') format('woff2'), url('../fonts/Epilogue-Regular.woff') format('woff'),
+        url('../fonts/Epilogue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('../fonts/Epilogue-Light.woff2') format('woff2'), url('../fonts/Epilogue-Light.woff') format('woff'), url('../fonts/Epilogue-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('../fonts/Epilogue-SemiBold.woff2') format('woff2'), url('../fonts/Epilogue-SemiBold.woff') format('woff'),
+        url('../fonts/Epilogue-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+.body {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
+.body.lock {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0px 32px;
+}
+
+.section {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 100px 0px;
+}
+
+.title {
+    display: inline-block;
+    width: 100%;
+    max-width: 450px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--dark-green-color);
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 375px;
+        padding: 0px 20px;
+    }
+
+    .main {
+        padding-bottom: 40px;
+    }
+
+    .section {
+        padding: 40px 0px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .main {
+        padding-bottom: 64px;
+    }
+
+    .section {
+        padding: 64px 0px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1240px;
+    }
+
+    .main {
+        padding-bottom: 80px;
+    }
+
+    .section {
+        padding: 80px 0px;
+    }
+}
+
+
+/*  ===== section - About us ========== */
+@media screen and (max-width: 767px) {
+    .container-about {
+        padding: 0px 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-paragraf-1 {
+        margin-bottom: 20px;
+        font-family: 'Epilogue';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: calc(18 / 14);
+        letter-spacing: -0.02em;
+        color: var(--black-color);
+    }
+    .about-paragraf-2 {
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-family: 'Epilogue';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: calc(18 / 14);
+        letter-spacing: -0.02em;
+        color: var(--black-color);
+    }
+    .about-gif {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        width: 335px;
+        height: 365px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container-about {
+        padding: 0px 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-wrap {
+        display: flex;
+    }
+    /* .title {
+            font-size: 40px;
+        } */
+    .about-title {
+        width: 178px ;
+        font-size: 40px;
+        margin-right: 40px;
+        margin-top: 0;
+    }
+    .about-paragraf-1 {
+        width: 220px;
+        margin-right: 20px;
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-family: 'Epilogue';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: calc(18 / 14);
+        letter-spacing: -0.02em;
+        color: var(--black-color);
+    }
+    .about-paragraf-2 {
+        width: 250px;
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-family: 'Epilogue';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: calc(18 / 14);
+        letter-spacing: -0.02em;
+        color: var(--black-color);
+    }
+    .about-gif {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        width: 704px;
+        height: 465px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .about-gif {
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 
+
+@media screen and (min-width: 1280px) {
+    .container-about {
+        padding: 0px 20px;
+        padding-left: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-title {
+        margin-right: 110px;
+    }
+    .about-paragraf-1 {
+        width: 439px;
+        margin-right: 40px;
+    
+    }
+    .about-paragraf-2 {
+        width: 380px;
+        margin-right: 33px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .about-gif {
+        max-width: 100%;
+        height: auto;
+        width: 892px;
+        height: 500px;
+        margin-right: 0;
+    }
+}
