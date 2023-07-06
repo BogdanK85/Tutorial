@@ -1270,3 +1270,5 @@
 //Доповни функцію getTotalBalanceByGender(users, gender) таким чином, щоб вона повертала загальний баланс користувачів (властивість balance), стать яких (властивість gender) збігається зі значенням параметра gender.
 // const getTotalBalanceByGender = (users, gender) => users.filter(user => user.gender === gender).map(user => user.balance).reduce((acc, person) => acc += person, 0)
 // const getTotalBalanceByGender = (users, gender) => users.filter(user => user.gender === gender).map(user => user.balance).reduce((acc, person) => acc += person, 0)
+
+

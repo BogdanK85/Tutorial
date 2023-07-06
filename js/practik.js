@@ -725,8 +725,29 @@
 
 // console.log(convert('1', 2, 3, '4')); // [1, '2', '3', 4]
 
+//============== ПРАКТИКА З МЕНТОРОМ 17,06, 23 ==========
+// function letMeSeeYourName(callback) {
+//     const userName = promt(`введіть ваше ім'я`)
+//     if (!userName) {
+//        return console.log(`Ви не ввели ім'я`);
+//     }
+//     callback(userName);
+// }
+
+// function greed(name) {
+//     console.log(`Привіт ${name}`);
+// }
+
+// letMeSeeYourName(greed)
 
 
+// ..===========
+// const models = vihecals.map(vihecal => vihecal.model)
+// console.log(models);
 
+// const models = vihecals.map({model} => model)
 
-
+//===================
+// const avalableModels = (cars, amount) => cars.filter(car => car.amount > amount).map(car => car.model)
+// console.log(avalableModels)
+// avalableModels(vihecles, 10) 
