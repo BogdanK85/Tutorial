@@ -750,4 +750,30 @@
 //===================
 // const avalableModels = (cars, amount) => cars.filter(car => car.amount > amount).map(car => car.model)
 // console.log(avalableModels)
-// avalableModels(vihecles, 10) 
+// avalableModels(vihecles, 10) .
+
+
+// function playerSaveCurrentTimeInStorage(data) {
+//     const currentTime = data.seconds;
+//         localStorage.setItem('videoplayer-current-time', currentTime)
+// }
+// const throttleSaveCurrentTime = throttle(playerSaveCurrentTimeInStorage, 1000);
+// const savedCurrentTime = localStorage.getItem('videoplayer-current-time')
+
+// player.setCurrentTime(savedCurrentTime)
+// player.on('timeupdate', throttleSaveCurrentTime)
+
+// const inframe = document.querySelector('inframe');
+// const player = new Player(inframe);
+
+// function playerSaveCurrentTime(data) {
+//     const currentTime = data.seconds;
+//     localStorage.setItem('videoplayer-current-time', currentTime);
+// }
+
+// const throttleSaveCurrentTime = throttle(playerSaveCurrentTime, 1000)
+// const savedCurrentTime = localStorage.getItem('videoplayer-current-time')
+
+// player.setCurrentTime(savedCurrentTime);
+// player.on('timeupdate', throttleSaveCurrentTime);
+
